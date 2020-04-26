@@ -1,4 +1,4 @@
-name: FullStack CI
+name: Github CI
 
 on:
   push:
