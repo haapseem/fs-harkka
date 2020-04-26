@@ -3,7 +3,5 @@
 
 | Day   | start - end   | hours | description |
 |-------|---------------|-------|-------------|
-| 26.4  | 14:00 - 18:40 |     0 | Inited backend |
-|||| Created pipeline for backend |
-|||| Inited front end |
-|||| Created pipelines for frontend
+| 26.4  | 14:00 - 18:45 |     0 | Inited backend and frontend |
+|||| Created pipelines for front and backends |
