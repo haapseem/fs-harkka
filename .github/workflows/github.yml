@@ -1,4 +1,4 @@
-name: Test CI
+name: FullStack CI
 
 on:
   push:
@@ -7,6 +7,26 @@ on:
     branches: [ master ]
 
 jobs:
+  backend:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node: [10, 12]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - run: cd backend && npm ci && cd -
+    - run: cd backend && npm test && cd -
+      env:
+        CI: true
+
   frontend:
     runs-on: ubuntu-latest
 
