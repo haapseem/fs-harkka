@@ -1,8 +1,8 @@
 import 'module-alias/register';
 
-import { Test } from '@core/test';
+import { Cls } from '@core/cls';
 
-let t = new Test();
+let t = new Cls();
 t.foo()
 
 console.log('Hello world!')

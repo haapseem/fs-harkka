@@ -1,5 +1,5 @@
 
-export class Test {
+export class Cls {
   foo() {
     console.log("foo")
   }
