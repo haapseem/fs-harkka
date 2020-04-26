@@ -1,0 +1,14 @@
+name: Test CI
+image: node:alpine
+
+
+stages:
+  - test
+
+before_script:
+  - cd frontend && npm ci && cd -
+
+jest-tests:
+  stage: test
+  script:
+    - cd frontend && npx jest --ci && cd -
