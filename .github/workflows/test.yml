@@ -1,5 +1,4 @@
 name: Test CI
-image: node:alpine
 
 on:
   push:
