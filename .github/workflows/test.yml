@@ -22,9 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - run: cd frontend
-    - run: npm ci
-    - run: npx jest --ci
-    - run: cd -
+    - run: cd frontend && npm ci && cd -
+    - run: cd frontend && npx jest --ci && cd -
       env:
         CI: true
